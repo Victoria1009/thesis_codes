@@ -1,0 +1,42 @@
+################################################
+Informacion del proyecto
+################################################
+Proyecto: deslizamientos
+Por: Victoria Camacho
+Ciudad, Pais: Bogota, Colombia
+Fecha: Septiembre 2023
+#######################
+
+#######################
+Rutas
+#######################
+proyecto.dir = C:/thesis_codes/project
+
+#######################
+Variables objetivo
+#######################
+variables.categoricas = tipo
+
+#######################
+Ajustes Variables Objetivo
+#######################
+categoricas.minobservaciones = 5
+
+#######################
+Covariables
+#######################
+covariables.vector = ct_cobertura;ct_litologia;ct_suelos;ct_ug_p
+covariables.raster = dem;derivados
+
+#######################
+Ajuste Covariables
+#######################
+vector.atributos = leyenda;lithology;UCS;Unidad
+
+#######################
+Aprendizaje de Maquinas
+#######################
+modelos.categoricas = ranger;C5.0;xgbTree;svmLinear;mlp;svmRadial;glmnet;multinom
+metricas.categoricas = Accuracy;Kappa
+
+##################################################
